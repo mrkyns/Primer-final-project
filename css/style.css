@@ -1,0 +1,51 @@
+@font-face {
+  font-family: "BMW Type Web Light All";
+  src: url("../font/e9de4f4d373ef5c6d9cf52490816ff5d.eot"); /* IE9*/
+  src: url("../font/e9de4f4d373ef5c6d9cf52490816ff5d.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../font/e9de4f4d373ef5c6d9cf52490816ff5d.woff2")
+      format("woff2"),
+    /* chrome、firefox */ url("../font/e9de4f4d373ef5c6d9cf52490816ff5d.woff")
+      format("woff"),
+    /* chrome、firefox */ url("../font/e9de4f4d373ef5c6d9cf52490816ff5d.ttf")
+      format("truetype"),
+    /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+      url("../font/e9de4f4d373ef5c6d9cf52490816ff5d.svg#BMW Type Web Light All")
+      format("svg"); /* iOS 4.1- */
+}
+@font-face {
+  font-family: "BMWTypeNext Pro Regular";
+  src: url("../font/ac95f91c55cc591ecf37a4d136ff8031.eot"); /* IE9*/
+  src: url("../font/ac95f91c55cc591ecf37a4d136ff8031.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../font/ac95f91c55cc591ecf37a4d136ff8031.woff2")
+      format("woff2"),
+    /* chrome、firefox */ url("../font/ac95f91c55cc591ecf37a4d136ff8031.woff")
+      format("woff"),
+    /* chrome、firefox */ url("../font/ac95f91c55cc591ecf37a4d136ff8031.ttf")
+      format("truetype"),
+    /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+      url("../font/ac95f91c55cc591ecf37a4d136ff8031.svg#BMWTypeNext Pro Regular")
+      format("svg"); /* iOS 4.1- */
+}
+@font-face {
+  font-family: "BMW Type Web Bold All";
+  src: url("../font/18ef7d48e5aad7f01745ddab09c29bf7.eot"); /* IE9*/
+  src: url("../font/18ef7d48e5aad7f01745ddab09c29bf7.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../font/18ef7d48e5aad7f01745ddab09c29bf7.woff2")
+      format("woff2"),
+    /* chrome、firefox */ url("../font/18ef7d48e5aad7f01745ddab09c29bf7.woff")
+      format("woff"),
+    /* chrome、firefox */ url("../font/18ef7d48e5aad7f01745ddab09c29bf7.ttf")
+      format("truetype"),
+    /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+      url("../font/18ef7d48e5aad7f01745ddab09c29bf7.svg#BMW Type Web Bold All")
+      format("svg"); /* iOS 4.1- */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
