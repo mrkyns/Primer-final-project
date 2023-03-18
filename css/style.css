@@ -44,7 +44,9 @@
       format("svg"); /* iOS 4.1- */
 }
 
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -66,8 +68,13 @@ h1 {
 }
 
 h2 {
+  font-family: "BMW Type Web light All";
+  font-size: 24px;
+}
+
+h3 {
   font-family: "BMW Type Web Bold All";
-  font-size: 30px;
+  font-size: 18px;
 }
 
 button {
@@ -76,7 +83,7 @@ button {
   color: #fff;
 }
 
-/* Header class */
+/* Header section classes */
 
 #header {
   width: 100%;
@@ -307,7 +314,7 @@ nav ul li a.hover {
   }
 }
 
-/* Hero Class */
+/* Hero section classes */
 
 .hero {
   width: 100%;
@@ -528,5 +535,163 @@ nav ul li a.hover {
     transition: background-color 0.3s ease-out;
     background-color: transparent;
     border: 2px solid #1c69d4;
+  }
+}
+
+/* Cars section classes */
+
+.cars {
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+}
+
+.cars_tab {
+  margin: 0 auto;
+  max-width: 1280px;
+  display: flex;
+  justify-content: center;
+}
+
+.cars_tab ul {
+  display: flex;
+  align-items: last baseline;
+  width: 100%;
+  height: 60px;
+  border-bottom: 1px solid #8c8c8c;
+  margin: 10px 0;
+}
+
+.cars_tab ul li {
+  list-style: none;
+}
+
+.cars_tab ul li button {
+  width: 80px;
+  height: 40px;
+  color: #000;
+  font-size: 15px;
+  border: 0;
+  background-color: transparent;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.cars_tab ul li button:hover {
+  background-color: #1c69d4;
+  color: #fff;
+}
+
+.cars_tab ul li button.active {
+  background-color: #8c8c8c;
+  color: #fff;
+}
+
+.cars_select {
+  margin: 0 auto;
+  max-width: 1600px;
+  display: flex;
+  justify-content: center;
+}
+.cars_select label {
+  margin-right: 10px;
+  font-size: 18px;
+  font-family: "BMW Type Web Bold All";
+  color: #8c8c8c;
+}
+
+.cars_models_tablet {
+  display: none;
+}
+
+.cars_models_mobile {
+  display: none;
+}
+
+.cars_box {
+  margin: 0 auto;
+  max-width: 1280px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.cars_info {
+  max-width: 320px;
+}
+
+.cars_info_img {
+  margin: 0 20px;
+  height: 20px;
+}
+
+.cars_info_img img {
+  height: 10px;
+}
+
+.cars_info_txt {
+  margin: 0 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 18px;
+}
+
+.cars_info_txt h3 span {
+  font-family: "BMW Type Web Bold All";
+  font-size: 15px;
+  color: #1c69d4;
+}
+
+.cars_info_link {
+  margin: 10px 0 20px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.cars_info_link a {
+  font-family: "BMW Type Web Bold All";
+  font-size: 16px;
+  color: #000;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.cars_info_link a:hover {
+  color: #1c69d4;
+}
+
+@media (max-width: 992px) {
+  .cars_tab {
+    display: none;
+  }
+
+  .cars_models_tablet {
+    display: block;
+    margin-top: 30px;
+  }
+
+  .cars_box {
+    justify-content: center;
+  }
+
+  .cars_info {
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  .cars_models_tablet {
+    display: none;
+  }
+
+  .cars_models_mobile {
+    display: block;
+    margin-top: 30px;
+  }
+
+  .cars_info {
+    max-width: 100%;
   }
 }
