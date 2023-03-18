@@ -4,12 +4,94 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/images/bmw_logo.svg" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Document</title>
+    <title>BMW World</title>
   </head>
   <body>
-    <section id="header"></section>
-    <section id="hero"></section>
+    <section id="header">
+      <div id="menu_container">
+        <div class="logo"><img src="images/bmw_logo.svg" /></div>
+        <nav>
+          <div class="desk_menu">
+            <ul>
+              <li><a href="#">Models</a></li>
+              <li><a href="#">Advice & Purchase</a></li>
+              <li><a href="#">Electromobility</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Discover</a></li>
+            </ul>
+          </div>
+          <div class="icon_menu">
+            <ul>
+              <li class="mobile_icon">
+                <a href="#"><img src="images/search.svg" /></a>
+              </li>
+              <li class="mobile_icon">
+                <a href="#"><img src="images/location.svg" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="images/person.svg" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="images/cart.svg" /></a>
+              </li>
+              <li>
+                <div class="hamburger">
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="mobile_menu">
+        <div class="mobile_menu_search">
+          <form action="">
+            <input type="text" placeholder="search" />
+          </form>
+        </div>
+        <ul class="mobile_menu_link">
+          <li class="close"><a href="#">Models</a></li>
+          <li class="close"><a href="#">Advice & Purchase</a></li>
+          <li class="close"><a href="#">Electromobility</a></li>
+          <li class="close"><a href="#">Services</a></li>
+          <li class="close"><a href="#">Discover</a></li>
+        </ul>
+      </div>
+    </section>
+    <section id="hero">
+      <div class="hero_container">
+        <div class="hero_main">
+          <div class="hero_txt">
+            <h1>THE NEW i5</h1>
+            <img src="images/BMW_i_logo.png" />
+            <p>
+              Looking forward to a new member of the all electric BMW family
+            </p>
+            <button>Discover now</button>
+          </div>
+        </div>
+        <div class="hero_child border_left">
+          <img src="images/bmw_i4.jpg" />
+          <div class="hero_child_txt">
+            <img src="images/BMW_i_logo.png" />
+            <p>THE i4 100% ELECTRIC</p>
+            <button>New cars available</button>
+          </div>
+        </div>
+        <div class="hero_child border_right">
+          <img src="images/bmw_x5_m.jpg" />
+          <div class="hero_child_txt">
+            <img src="images/BMW_M_logo.png" />
+            <p>THE X5 M</p>
+            <button>Experience more</button>
+          </div>
+        </div>
+      </div>
+    </section>
     <section id="cars"></section>
     <section id="blog"></section>
     <section id="footer"></section>

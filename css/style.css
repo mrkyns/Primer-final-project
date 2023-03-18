@@ -48,4 +48,485 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "BMW Type Web Light All";
+}
+
+body {
+  background: linear-gradient(
+    90deg,
+    rgba(237, 237, 237, 1) 0%,
+    rgba(224, 224, 224, 1) 100%
+  );
+  width: 100%;
+}
+
+h1 {
+  font-family: "BMW Type Web light All";
+  font-size: 50px;
+}
+
+h2 {
+  font-family: "BMW Type Web Bold All";
+  font-size: 30px;
+}
+
+button {
+  font-family: "BMW Type Web Bold All";
+  font-size: 18px;
+  color: #fff;
+}
+
+/* Header class */
+
+#header {
+  width: 100%;
+  z-index: 5;
+  position: absolute;
+}
+
+#menu_container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.logo {
+  background-color: #fff;
+  width: 100px;
+  box-shadow: 2px 2px 4px #8c8c8c;
+}
+.logo img {
+  width: 100%;
+  padding: 10px;
+}
+
+nav {
+  width: 1100px;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+nav ul {
+  display: flex;
+  position: relative;
+}
+
+nav ul li {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 90px;
+  list-style: none;
+  padding: 10px;
+  transition: 0.8s;
+  border-bottom: 3px solid transparent;
+}
+
+nav ul li:first-child {
+  margin-left: 10px;
+}
+
+nav ul li:hover {
+  border-bottom: 3px solid #1c69d4;
+}
+
+nav ul li a {
+  position: relative;
+  height: 91px;
+  display: flex;
+  align-items: center;
+  transition: 0.5s;
+  font-family: "BMW Type Web Bold All";
+  color: #fff;
+  z-index: 1;
+  text-decoration: none;
+  transition: 0.1s;
+}
+
+nav ul li a.hover {
+  color: #1c69d4;
+}
+
+.icon_menu {
+  width: 250px;
+  right: 0;
+  display: flex;
+  justify-content: end;
+}
+
+.icon_menu ul li a img {
+  width: 25px;
+}
+
+.icon_menu ul li:last-child {
+  padding-right: 0;
+}
+
+.ionicon {
+  color: #fff;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3d ease-in-out;
+  transition: all 0.3d ease-in-out;
+  background-color: #fff;
+}
+
+.mobile_menu {
+  position: absolute;
+  right: 1.5rem;
+  top: 75px;
+  width: 300px;
+  height: 0;
+  display: none;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.mobile_menu.active {
+  height: 205px;
+}
+
+.mobile_menu ul li {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.mobile_menu ul li:last-child {
+  margin-bottom: 10px;
+}
+
+.mobile_menu ul li a {
+  font-family: "BMW Type Web Bold All";
+  color: #fff;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.mobile_menu ul li a:hover {
+  color: #1c69d4;
+}
+
+.mobile_menu_search {
+  display: block;
+  text-align: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.mobile_menu_search input {
+  width: 90%;
+  padding: 10px;
+  height: 40px;
+  color: #fff;
+  font-size: 16px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid #fff;
+  border-radius: 10px;
+}
+
+@media (max-width: 992px) {
+  .desk_menu {
+    display: none;
+  }
+
+  .menu_container {
+    width: 100%;
+  }
+
+  nav {
+    width: 100%;
+    justify-content: flex-end;
+    background: rgba(0, 0, 0, 0.2);
+  }
+
+  .icon_menu {
+    margin-right: 20px;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .mobile_menu_search {
+    display: none;
+  }
+
+  .mobile_menu {
+    display: block;
+  }
+}
+
+@media (max-width: 576px) {
+  .mobile_icon {
+    display: none;
+  }
+
+  .mobile_menu {
+    width: 95%;
+    right: 11px;
+  }
+
+  .mobile_menu.active {
+    height: 270px;
+  }
+
+  .mobile_menu_search {
+    display: block;
+  }
+}
+
+/* Hero Class */
+
+.hero {
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+}
+
+.hero_container {
+  margin: 0 auto;
+  max-width: 1600px;
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+}
+
+.hero_main {
+  width: 100%;
+  background-image: url(../images/bmw_main.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+  height: 720px;
+}
+
+.hero_txt {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  top: 150px;
+  left: 100px;
+  max-width: 50%;
+  padding: 20px;
+  color: #fff;
+  font-size: 20px;
+}
+
+.hero_txt h1 {
+  width: 100%;
+}
+
+.hero_txt p {
+  line-height: 1.3em;
+}
+
+.hero_txt img {
+  width: 80px;
+  height: 44px;
+}
+
+.hero_txt button {
+  width: 300px;
+  height: 50px;
+  background-color: #1c69d4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-width: 180px;
+  min-height: 3.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-out;
+  border: 0;
+}
+
+.hero_txt button:hover {
+  background-color: #0653b6;
+}
+
+.hero_child {
+  width: 50%;
+  height: auto;
+  position: relative;
+}
+
+.border_left {
+  border-top: 4px solid #fff;
+  border-right: 2px solid #fff;
+}
+
+.border_right {
+  border-top: 4px solid #fff;
+  border-left: 2px solid #fff;
+}
+
+.hero_child img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hero_child_txt {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%;
+  padding: 20px;
+  color: #fff;
+  font-size: 20px;
+}
+
+.hero_child_txt img {
+  width: 40px;
+}
+
+.hero_child_txt button {
+  width: 200px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-width: 180px;
+  min-height: 3.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-out;
+  background-color: transparent;
+  border: 2px solid #1c69d4;
+}
+
+.hero_child_txt button:hover {
+  background-color: rgba(6, 83, 182, 0.5);
+}
+
+@media (max-width: 992px) {
+  .hero_main {
+    background-image: url(../images/bmw_main_mobile.jpg);
+    position: relative;
+  }
+
+  .hero_txt {
+    position: relative;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
+    top: 450px;
+    left: 0;
+    padding: 20px;
+    color: #fff;
+    font-size: 20px;
+  }
+  .hero_txt p {
+    width: 50%;
+  }
+
+  .hero_child {
+    width: 100%;
+    position: relative;
+    margin-top: 5px;
+  }
+
+  .border_left {
+    border: 0;
+  }
+
+  .border_right {
+    border: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero_main {
+    height: 500px;
+  }
+
+  .hero_txt {
+    gap: 10px;
+    top: 315px;
+    left: 0;
+    padding: 10px;
+    color: #fff;
+    font-size: 17px;
+  }
+  .hero_txt p {
+    width: 70%;
+  }
+
+  .hero_txt h1 {
+    font-size: 35px;
+  }
+
+  .hero_txt button {
+    width: 250px;
+    font-size: 18px;
+  }
+
+  .hero_child_txt {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+    font-size: 17px;
+  }
+
+  .hero_child_txt img {
+    width: 30px;
+  }
+
+  .hero_child_txt button {
+    width: 200px;
+    height: 40px;
+    min-width: 150px;
+    font-size: 15px;
+    min-height: 3.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-out;
+    background-color: transparent;
+    border: 2px solid #1c69d4;
+  }
 }
