@@ -574,6 +574,7 @@ nav ul li a.hover {
   border: 0;
   background-color: transparent;
   transition: background-color 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 .cars_tab ul li button:hover {
@@ -662,6 +663,101 @@ nav ul li a.hover {
   color: #1c69d4;
 }
 
+.car_options {
+  width: 100%;
+  background: #f2f2f2;
+  position: absolute;
+}
+
+.car_options_container {
+  margin: 0 auto;
+  max-width: 1280px;
+  display: flex;
+  gap: 5px;
+}
+
+.car_options_titel {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  border-bottom: 2px solid #1c69d4;
+}
+
+.car_options_titel h2 {
+  color: #1c69d4;
+}
+
+.car_options_konfig {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  border-bottom: 2px solid #1c69d4;
+}
+
+.car_options_konfig img {
+  width: 45px;
+}
+
+.car_options_konfig button {
+  width: 200px;
+  height: 40px;
+  background-color: #1c69d4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-width: 180px;
+  min-height: 3.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-out;
+  border: 0;
+}
+
+.car_options_konfig button:hover {
+  background-color: #0653b6;
+}
+
+.car_options_box {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  border-bottom: 2px solid #1c69d4;
+}
+
+.car_options_box img {
+  width: 45px;
+}
+
+.car_options_box button {
+  width: 200px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-width: 180px;
+  min-height: 3.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-out;
+  background-color: transparent;
+  border: 2px solid #1c69d4;
+  color: #000;
+}
+
+.car_options_box button:hover {
+  background-color: rgba(6, 83, 182, 0.5);
+}
+
 @media (max-width: 992px) {
   .cars_tab {
     display: none;
@@ -679,6 +775,26 @@ nav ul li a.hover {
   .cars_info {
     max-width: 50%;
   }
+
+  .car_options_container {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .car_options_titel {
+    width: 100%;
+    padding: 20px 0 0 20px;
+    border: 0;
+    gap: 2px;
+  }
+
+  .car_options_konfig {
+    width: 32%;
+  }
+
+  .car_options_box {
+    width: 32.5%;
+  }
 }
 
 @media (max-width: 576px) {
@@ -693,5 +809,20 @@ nav ul li a.hover {
 
   .cars_info {
     max-width: 100%;
+  }
+
+  .car_options_container {
+    border-bottom: 2px solid #1c69d4;
+    gap: 0;
+  }
+
+  .car_options_konfig {
+    width: 100%;
+    border: 0;
+  }
+
+  .car_options_box {
+    width: 100%;
+    border: 0;
   }
 }
