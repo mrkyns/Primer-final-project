@@ -473,6 +473,10 @@ nav ul li a.hover {
     margin-top: 5px;
   }
 
+  .hero_child_txt {
+    top: 180px;
+  }
+
   .border_left {
     border: 0;
   }
@@ -489,7 +493,7 @@ nav ul li a.hover {
 
   .hero_txt {
     gap: 10px;
-    top: 315px;
+    top: 370px;
     left: 0;
     padding: 10px;
     color: #fff;
@@ -504,13 +508,12 @@ nav ul li a.hover {
   }
 
   .hero_txt button {
-    width: 250px;
-    font-size: 18px;
+    display: none;
   }
 
   .hero_child_txt {
     position: absolute;
-    top: 0;
+    top: 105px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -526,15 +529,7 @@ nav ul li a.hover {
   }
 
   .hero_child_txt button {
-    width: 200px;
-    height: 40px;
-    min-width: 150px;
-    font-size: 15px;
-    min-height: 3.25rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease-out;
-    background-color: transparent;
-    border: 2px solid #1c69d4;
+    display: none;
   }
 }
 
@@ -615,6 +610,7 @@ nav ul li a.hover {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding-bottom: 30px;
 }
 
 .cars_info {
@@ -666,7 +662,6 @@ nav ul li a.hover {
 .car_options {
   width: 100%;
   background: #f2f2f2;
-  position: absolute;
 }
 
 .car_options_container {
@@ -811,6 +806,10 @@ nav ul li a.hover {
     max-width: 100%;
   }
 
+  .cars_info_link {
+    display: none;
+  }
+
   .car_options_container {
     border-bottom: 2px solid #1c69d4;
     gap: 0;
@@ -824,5 +823,75 @@ nav ul li a.hover {
   .car_options_box {
     width: 100%;
     border: 0;
+  }
+}
+
+/* Blog section classes */
+
+.blog {
+  width: 100%;
+  position: absolute;
+}
+
+.blog_container {
+  margin: 0 auto;
+  max-width: 1280px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 50px 0;
+}
+
+.blog_box {
+  width: 49%;
+  padding: 20px;
+  border: 1px solid #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.blog_box_txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 18px;
+}
+
+.blog_box_txt h1 {
+  font-size: 30px;
+}
+
+.blog_box_txt a {
+  font-family: "BMW Type Web Bold All";
+  font-size: 16px;
+  color: #000;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.blog_box_txt a:hover {
+  color: #1c69d4;
+}
+
+@media (max-width: 992px) {
+  .blog_container {
+    justify-content: center;
+  }
+  .blog_box {
+    width: 45%;
+  }
+}
+
+@media (max-width: 576px) {
+  .blog_box {
+    width: 92%;
+  }
+
+  .blog_box_txt a {
+    display: none;
   }
 }
