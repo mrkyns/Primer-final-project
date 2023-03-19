@@ -668,11 +668,12 @@ nav ul li a.hover {
   margin: 0 auto;
   max-width: 1280px;
   display: flex;
-  gap: 5px;
+  justify-content: space-between;
 }
 
 .car_options_titel {
-  padding: 0;
+  padding: 20px 20px 20px 0;
+  width: 420px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -685,7 +686,7 @@ nav ul li a.hover {
 }
 
 .car_options_konfig {
-  width: 300px;
+  width: 280px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -719,7 +720,7 @@ nav ul li a.hover {
 }
 
 .car_options_box {
-  width: 300px;
+  width: 280px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -893,5 +894,234 @@ nav ul li a.hover {
 
   .blog_box_txt a {
     display: none;
+  }
+}
+
+/* Footer section classes */
+
+.footer {
+  width: 100%;
+  position: absolute;
+
+  z-index: 2;
+}
+
+.footer_container {
+  margin: 0 auto;
+  max-width: 1280px;
+}
+
+.footer_container a {
+  font-family: "BMW Type Web Bold All";
+  color: #1c69d4;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer_container a:hover {
+  color: #000;
+}
+
+.footer_info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 50px;
+}
+
+.footer_more {
+  display: none;
+}
+
+.footer_end {
+  width: 100%;
+  background: #f2f2f2;
+}
+
+.footer_end_container {
+  margin: 0 auto;
+  max-width: 1280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer_end_container a {
+  /*font-family: "BMW Type Web Bold All";*/
+  font-size: 16px;
+  color: #8c8c8c;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer_end_container a:hover {
+  color: #0653b6;
+}
+
+.footer_social {
+  display: flex;
+  flex-wrap: wrap;
+  width: 280px;
+  padding: 50px;
+  align-self: flex-end;
+}
+
+.footer_social span {
+  width: 100%;
+  color: #8c8c8c;
+  font-size: 23px;
+  padding-bottom: 30px;
+}
+
+.footer_social ul {
+  display: flex;
+  position: relative;
+  align-items: center;
+  gap: 40px;
+}
+
+.footer_social ul li {
+  position: relative;
+  list-style: none;
+}
+
+.footer_social ul li svg {
+  width: 30px;
+  fill: #8c8c8c;
+  transition: fill 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.footer_social ul li svg:hover {
+  fill: #0653b6;
+}
+
+.footer_links {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+}
+
+.footer_links_box {
+  width: 45%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-top: 1px solid rgba(140, 140, 140, 0.3);
+  gap: 10px;
+}
+
+.footer_links_box span {
+  font-size: 23px;
+  color: #8c8c8c;
+  padding-bottom: 30px;
+}
+
+.footer_links_box ul {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.footer_links_box ul li {
+  position: relative;
+  list-style: none;
+}
+
+.footer_menu {
+  width: 100%;
+  background: #fff;
+}
+
+.footer_menu_container {
+  margin: 0 auto;
+  max-width: 1280px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 50px 70px 50px;
+}
+
+.footer_menu_container span {
+  color: #8c8c8c;
+  font-size: 18px;
+}
+
+.footer_menu_container ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: relative;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.footer_menu_container li {
+  position: relative;
+  list-style: none;
+}
+
+.footer_menu_container li a {
+  font-family: "BMW Type Web Bold All";
+  color: #1c69d4;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer_menu_container li a:hover {
+  color: #000;
+}
+
+@media (max-width: 992px) {
+  .footer_info {
+    padding: 0 50px 50px 50px;
+  }
+
+  .footer_menu_container {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    padding: 30px 50px 70px 50px;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer_info {
+    padding: 0 20px 20px 20px;
+    font-size: 14px;
+  }
+
+  .footer_mobile {
+    display: none;
+  }
+
+  .footer_more {
+    display: block;
+  }
+
+  .footer_social {
+    align-self: center;
+    padding: 50px 50px 0 50px;
+  }
+
+  .footer_links {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer_links_box {
+    width: 80%;
+  }
+
+  .footer_menu_container ul {
+    justify-content: center;
   }
 }
